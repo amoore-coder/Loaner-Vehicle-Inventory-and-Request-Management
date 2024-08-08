@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c9f56331837f42106d3e5e20ceaad36c" extends="sys_import_set_row" label="Import LVA Catalog" max_length="40" name="x_1394653_lva_import_lva_catalog" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vehicle Model" label="Vehicle Model" max_length="40" name="u_vehicle_model" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vehicle Description" label="Vehicle Description" max_length="92" name="u_vehicle_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Status" label="Status" max_length="40" name="u_status" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vehicle Make" label="Vehicle Make" max_length="40" name="u_vehicle_make" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Image" label="Image" max_length="40" name="u_image" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vehicle Year" label="Vehicle Year" max_length="40" name="u_vehicle_year" type="string"/>
+    </element>
+</database>

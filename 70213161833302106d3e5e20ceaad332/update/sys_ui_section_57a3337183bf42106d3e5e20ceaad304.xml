@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Activity" section_id="57a3337183bf42106d3e5e20ceaad304" sys_domain="global" table="x_1394653_lva_vehicle_tracker" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>activity.xml</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:37:32</sys_created_on>
+            <sys_id>74c333b183bf42106d3e5e20ceaad379</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Activities (filtered)">444ea5c6bf310100e628555b3f0739d6</sys_ui_formatter>
+            <sys_ui_section caption="Activity" display_value="Activity" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="Default view">57a3337183bf42106d3e5e20ceaad304</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:37:32</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Activity</caption>
+            <header>false</header>
+            <name>x_1394653_lva_vehicle_tracker</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:37:09</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>57a3337183bf42106d3e5e20ceaad304</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1394653_lva_vehicle_tracker</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+            <sys_update_name>sys_ui_section_57a3337183bf42106d3e5e20ceaad304</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:37:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

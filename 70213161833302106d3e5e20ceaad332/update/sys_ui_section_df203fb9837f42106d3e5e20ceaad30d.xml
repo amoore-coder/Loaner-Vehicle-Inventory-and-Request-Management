@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="df203fb9837f42106d3e5e20ceaad30d" sys_domain="global" table="x_1394653_lva_vehicle_tracker" version="3" view="return_details">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>bb20f77d837f42106d3e5e20ceaad3e0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>request_number</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>3320f77d837f42106d3e5e20ceaad3e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>b720f77d837f42106d3e5e20ceaad3e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>vehicle_status</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>3f20f77d837f42106d3e5e20ceaad3e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>tracker_status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>b320f77d837f42106d3e5e20ceaad3e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>3b20f77d837f42106d3e5e20ceaad3e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>bf20f77d837f42106d3e5e20ceaad3e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>date_requested</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>3720f77d837f42106d3e5e20ceaad3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>expected_return_date</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>bb20f77d837f42106d3e5e20ceaad3e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>delivery_information</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>3320f77d837f42106d3e5e20ceaad3e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>additional_comments</element>
+            <position>10</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:54</sys_created_on>
+            <sys_id>b720f77d837f42106d3e5e20ceaad3e4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_vehicle_tracker" sys_domain="global" view="57203fb9837f42106d3e5e20ceaad309">df203fb9837f42106d3e5e20ceaad30d</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_1394653_lva_vehicle_tracker</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 18:21:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>df203fb9837f42106d3e5e20ceaad30d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1394653_lva_vehicle_tracker</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+            <sys_update_name>sys_ui_section_df203fb9837f42106d3e5e20ceaad30d</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 18:21:52</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Return Details" name="return_details">57203fb9837f42106d3e5e20ceaad309</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

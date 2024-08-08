@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="970e2779837f42106d3e5e20ceaad3ae" label="Vehicle Tracker" max_length="40" name="x_1394653_lva_vehicle_tracker" type="collection">
+        <element attributes="encode_utf8=false" label="Vehicle" mandatory="true" max_length="32" name="vehicle" reference="x_1394653_lva_loaner_vehicle_catalog" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Tracker Status" mandatory="true" max_length="40" name="tracker_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Closed" sequence="1" value="Closed"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="Cancelled"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Returned Vehicle Status" max_length="40" name="returned_vehicle_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Returned in Good Condition" sequence="0" value="Returned in Good Condition"/>
+                <element inactive_on_update="false" label="Returned with Major Issues" sequence="2" value="Returned with Major Issues"/>
+                <element inactive_on_update="false" label="Returned with Minor Issues" sequence="1" value="Returned with Minor Issues"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="1000" name="additional_comments" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Delivery Information" max_length="1000" name="delivery_information" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Expected Return Date" max_length="40" name="expected_return_date" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Location" max_length="32" name="location" reference="cmn_location" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date Requested" max_length="40" name="date_requested" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Vehicle Status" mandatory="true" max_length="40" name="vehicle_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Returned for Inspection" sequence="2" value="Returned for Inspection"/>
+                <element inactive_on_update="false" label="Returned to Warehouse" sequence="4" value="Returned to Warehouse"/>
+                <element inactive_on_update="false" label="Pending Release" sequence="0" value="Pending Release"/>
+                <element inactive_on_update="false" label="Decommissioned" sequence="5" value="Decommissioned"/>
+                <element inactive_on_update="false" label="Out on Field" sequence="1" value="Out on Field"/>
+                <element inactive_on_update="false" label="Sent for Servicing" sequence="3" value="Sent for Servicing"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Request Number" mandatory="true" max_length="32" name="request_number" reference="sc_req_item" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Actual Return Date" max_length="40" name="actual_return_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Return Notes" max_length="1000" name="return_notes" type="string"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="location"/>
+        </index>
+        <index name="index3">
+            <element name="request_number"/>
+        </index>
+        <index name="index4">
+            <element name="vehicle"/>
+        </index>
+    </element>
+</database>

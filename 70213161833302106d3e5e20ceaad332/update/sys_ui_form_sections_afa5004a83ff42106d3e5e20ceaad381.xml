@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="afa5004a83ff42106d3e5e20ceaad381" sys_domain="global" table="x_1394653_lva_loaner_vehicle_catalog" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 19:55:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7ba5004a83ff42106d3e5e20ceaad382</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1394653_lva_loaner_vehicle_catalog" name="x_1394653_lva_loaner_vehicle_catalog" sys_domain="global" view="Default view">afa5004a83ff42106d3e5e20ceaad381</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1394653_lva_loaner_vehicle_catalog" sys_domain="global" view="Default view">ef7147bd837b42106d3e5e20ceaad36b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 19:55:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 19:55:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3a5004a83ff42106d3e5e20ceaad384</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1394653_lva_loaner_vehicle_catalog" name="x_1394653_lva_loaner_vehicle_catalog" sys_domain="global" view="Default view">afa5004a83ff42106d3e5e20ceaad381</sys_ui_form>
+            <sys_ui_section caption="Vehicle Trackers" display_value="Vehicle Trackers" name="x_1394653_lva_loaner_vehicle_catalog" sys_domain="global" view="Default view">b3a5004a83ff42106d3e5e20ceaad383</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 19:55:49</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1394653_lva_loaner_vehicle_catalog</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2024-08-04 19:55:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>afa5004a83ff42106d3e5e20ceaad381</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1394653_lva_loaner_vehicle_catalog</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+            <sys_update_name>sys_ui_form_sections_afa5004a83ff42106d3e5e20ceaad381</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2024-08-04 19:55:49</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
