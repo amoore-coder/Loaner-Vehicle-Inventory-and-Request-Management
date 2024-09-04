@@ -16,19 +16,19 @@
         <order>0</order>
         <parent/>
         <roles/>
-        <sc_catalog/>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
         <sys_class_name>sc_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2024-08-06 21:41:09</sys_created_on>
         <sys_id>80e0f22a833302106d3e5e20ceaad311</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>Loaner Vehicle</sys_name>
         <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
         <sys_policy/>
         <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
         <sys_update_name>sc_category_80e0f22a833302106d3e5e20ceaad311</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-08-06 21:41:09</sys_updated_on>
+        <sys_updated_on>2024-08-13 00:30:33</sys_updated_on>
         <title>Loaner Vehicle</title>
     </sc_category>
     <sys_translated_text action="delete_multiple" query="documentkey=80e0f22a833302106d3e5e20ceaad311"/>
