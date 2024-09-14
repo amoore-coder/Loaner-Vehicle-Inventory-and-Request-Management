@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category>140e2eda0b203300a1b16c2367673af4</category>
+        <channels/>
+        <connect_queue/>
+        <context_profiles/>
+        <description>Address issues related to accessing the record producer.</description>
+        <dialog_acts_enabled>false</dialog_acts_enabled>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <foundational>false</foundational>
+        <graph>{
+  "graph_api_version": "1.0.65",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "5a9396fb975b416789f7b65bd074c438": {
+          "id": "5a9396fb975b416789f7b65bd074c438",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Hello, "
+                  },
+                  {
+                    "type": "datapill",
+                    "dataPill": {
+                      "value": "{{vaInputs.user.first_name}}",
+                      "displayValue": "Input Variables➛User➛First name"
+                    },
+                    "children": [
+                      {
+                        "text": ""
+                      }
+                    ]
+                  },
+                  {
+                    "text": "! Welcome to the Form Topic."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "1be5d4cc64084fc79658298d540cba8b": {
+          "id": "1be5d4cc64084fc79658298d540cba8b",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "I'm glad to hear that! Have a great day."
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          }
+        },
+        "d3092e1c0ec14b3a858d954b316aeeb0": {
+          "name": "Form Issues",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "How may I help you with your form issue?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "variableId": "0be87270a7af4bc19e7ce4e9e44b92aa",
+          "detailDescription": "",
+          "id": "d3092e1c0ec14b3a858d954b316aeeb0",
+          "stepType": "ChoicePrompt",
+          "hasCardHeader": false,
+          "cardMetadata": {
+            "mode": "card",
+            "metadataScript": "",
+            "cardTemplate": "",
+            "cardFields": {},
+            "cardDefinition": {}
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false
+        },
+        "572eb29e019040ba954d0e63d1d2d20c": {
+          "id": "572eb29e019040ba954d0e63d1d2d20c",
+          "stepType": "MultiPartOutput",
+          "name": "Form Solutions",
+          "applicability": {
+            "value": "vaInputs.form_issues=The form is loading slow^ORvaInputs.form_issues=Cannot open form^ORvaInputs.form_issues=Cannot save form",
+            "mode": "query"
+          },
+          "navigationLabel": "Okay.",
+          "messages": [
+            {
+              "type": "Text",
+              "value": "Please try restarting your computer and reload the form."
+            },
+            {
+              "type": "Text",
+              "value": "Please try clearing your cookies and cache and resetting your browser."
+            }
+          ]
+        },
+        "06792b187f1c424ea9a95ebe0a5ae3d5": {
+          "id": "06792b187f1c424ea9a95ebe0a5ae3d5",
+          "stepType": "ImplicitEnd"
+        },
+        "d25b761fafc14600b3c94cac37fd4a38": {
+          "id": "d25b761fafc14600b3c94cac37fd4a38",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "efcd591f5af1481594ddf16d6140c72b": {
+          "id": "efcd591f5af1481594ddf16d6140c72b",
+          "stepType": "BooleanPrompt",
+          "name": "Resolved?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Did this resolve your issue?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": ""
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "vaInputs.form_issues=Other",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "24919a6f034941c9848c767d771a49e9",
+          "detailDescription": ""
+        },
+        "26e9dec49c8b4a9b97101c8047b433f5": {
+          "id": "26e9dec49c8b4a9b97101c8047b433f5",
+          "stepType": "ImplicitEnd"
+        },
+        "61ab48c22410405386a63a0af231ee6b": {
+          "id": "61ab48c22410405386a63a0af231ee6b",
+          "stepType": "Decision",
+          "name": "Decision"
+        },
+        "c8378dd077a64b6ba2086daa3e447463": {
+          "id": "c8378dd077a64b6ba2086daa3e447463",
+          "stepType": "TextOutput",
+          "name": "Still didn't work?",
+          "secure": false,
+          "value": [
+            {
+              "value": [
+                {
+                  "type": "paragraph",
+                  "children": [
+                    {
+                      "text": "Would you like to speak to a Live Agent?"
+                    }
+                  ]
+                }
+              ],
+              "mode": "simple",
+              "_key": "739510ad28e6487baddb56d6c79bf217"
+            }
+          ],
+          "requestFeedback": true,
+          "applicability": {
+            "value": "vaInputs.form_issues!=Other",
+            "mode": "query"
+          }
+        },
+        "11628dddd83342fbbf0a32b0bda54b92": {
+          "id": "11628dddd83342fbbf0a32b0bda54b92",
+          "stepType": "BooleanPrompt",
+          "name": "Live Agent",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Connect you to a Live Agent?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Connecting you to a Live Agent. "
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": true,
+          "skipIfFulfilled": false,
+          "variableId": "f06c7d9ec1ee414483f610693bd747fa",
+          "detailDescription": ""
+        },
+        "db028d64dab74fa2a7c86d45cc63452a": {
+          "id": "db028d64dab74fa2a7c86d45cc63452a",
+          "stepType": "BooleanPrompt",
+          "name": "Anything Else?",
+          "prompt": {
+            "value": [
+              {
+                "type": "paragraph",
+                "children": [
+                  {
+                    "text": "Is there anything else I can assist you with?"
+                  }
+                ]
+              }
+            ],
+            "mode": "simple"
+          },
+          "confirmMessage": {
+            "value": "",
+            "mode": "simple"
+          },
+          "acknowledgeMsg": {
+            "value": "",
+            "mode": "simple"
+          },
+          "applicability": {
+            "value": "",
+            "mode": "query"
+          },
+          "skippable": {
+            "value": "",
+            "mode": "query"
+          },
+          "skipReprompt": {
+            "value": "",
+            "mode": "query"
+          },
+          "defaultValue": {
+            "value": "",
+            "mode": "simple"
+          },
+          "withNluUserInput": false,
+          "skipIfFulfilled": false,
+          "variableId": "6c2259c9cd594b4e8c323c5da65db50e",
+          "detailDescription": ""
+        },
+        "a574dd22660f4fd6a8652abf1d104d14": {
+          "id": "a574dd22660f4fd6a8652abf1d104d14",
+          "stepType": "ImplicitEnd"
+        },
+        "13ba0e0832024a9eb4c1d36985a94236": {
+          "id": "13ba0e0832024a9eb4c1d36985a94236",
+          "stepType": "Decision",
+          "name": "Decision"
+        }
+      },
+      "edges": [
+        {
+          "id": "c0531c62597943d8a4534314c8a48547",
+          "edgeType": "Branch",
+          "source": "13ba0e0832024a9eb4c1d36985a94236",
+          "target": "26e9dec49c8b4a9b97101c8047b433f5",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.anything_else_=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "f8ee4a4199c24feb86b7ab05a915f9a0",
+          "edgeType": "Branch",
+          "source": "13ba0e0832024a9eb4c1d36985a94236",
+          "target": "a574dd22660f4fd6a8652abf1d104d14",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.anything_else_=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "c3b87f7e393d4cf6bfb360fae1c1495b",
+          "edgeType": "Branch",
+          "source": "61ab48c22410405386a63a0af231ee6b",
+          "target": "d25b761fafc14600b3c94cac37fd4a38",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.resolved_=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "a49f2a8088b84f4a9d27ff0e78031bb0",
+          "edgeType": "Branch",
+          "source": "d25b761fafc14600b3c94cac37fd4a38",
+          "target": "1be5d4cc64084fc79658298d540cba8b",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.live_agent=true",
+            "mode": "query"
+          },
+          "label": "true"
+        },
+        {
+          "id": "e1f1d1ccd9c64c9586647ae50219356c",
+          "edgeType": "Branch",
+          "source": "d25b761fafc14600b3c94cac37fd4a38",
+          "target": "06792b187f1c424ea9a95ebe0a5ae3d5",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.live_agent=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "f9f261cf58e84317b9a8d8d99ff3fa54",
+          "edgeType": "Edge",
+          "source": "5a9396fb975b416789f7b65bd074c438",
+          "target": "d3092e1c0ec14b3a858d954b316aeeb0",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "36e12ec5095a44e3a63894344fade2f4",
+          "edgeType": "Edge",
+          "source": "d3092e1c0ec14b3a858d954b316aeeb0",
+          "target": "572eb29e019040ba954d0e63d1d2d20c",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "3841df547bc9446da68c291ceee6f1b3",
+          "edgeType": "Edge",
+          "source": "572eb29e019040ba954d0e63d1d2d20c",
+          "target": "efcd591f5af1481594ddf16d6140c72b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e982bd6944ba462da43ddba85132b9db",
+          "edgeType": "Edge",
+          "source": "efcd591f5af1481594ddf16d6140c72b",
+          "target": "61ab48c22410405386a63a0af231ee6b",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "a620283f3e2e471ab60d3fb3ae44bd08",
+          "edgeType": "Branch",
+          "source": "61ab48c22410405386a63a0af231ee6b",
+          "target": "c8378dd077a64b6ba2086daa3e447463",
+          "sourcePort": "",
+          "targetPort": "",
+          "expression": {
+            "value": "vaInputs.resolved_=false",
+            "mode": "query"
+          },
+          "label": "false"
+        },
+        {
+          "id": "4908c191dab843d2a32228b2c331675e",
+          "edgeType": "Edge",
+          "source": "c8378dd077a64b6ba2086daa3e447463",
+          "target": "11628dddd83342fbbf0a32b0bda54b92",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "e5bc19a4e760457cb57147d9eecd009c",
+          "edgeType": "Edge",
+          "source": "11628dddd83342fbbf0a32b0bda54b92",
+          "target": "db028d64dab74fa2a7c86d45cc63452a",
+          "sourcePort": "",
+          "targetPort": ""
+        },
+        {
+          "id": "ae07517213b34885adbe569984b09796",
+          "edgeType": "Edge",
+          "source": "db028d64dab74fa2a7c86d45cc63452a",
+          "target": "13ba0e0832024a9eb4c1d36985a94236",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    },
+    "0be87270a7af4bc19e7ce4e9e44b92aa": {
+      "id": "0be87270a7af4bc19e7ce4e9e44b92aa",
+      "name": "form_issues",
+      "label": "Form Issues",
+      "varType": "choice",
+      "choices": [
+        {
+          "label": "The form is loading slow",
+          "value": "The form is loading slow"
+        },
+        {
+          "label": "Cannot open form",
+          "value": "Cannot open form"
+        },
+        {
+          "label": "Cannot save form",
+          "value": "Cannot save form",
+          "checked": true,
+          "meta": {}
+        },
+        {
+          "label": "Other",
+          "value": "Other",
+          "checked": true,
+          "meta": {}
+        }
+      ],
+      "category": "vaInputs",
+      "nodeId": "d3092e1c0ec14b3a858d954b316aeeb0",
+      "isHidden": false
+    },
+    "f06c7d9ec1ee414483f610693bd747fa": {
+      "id": "f06c7d9ec1ee414483f610693bd747fa",
+      "name": "live_agent",
+      "label": "Live Agent",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "11628dddd83342fbbf0a32b0bda54b92",
+      "isHidden": false
+    },
+    "24919a6f034941c9848c767d771a49e9": {
+      "id": "24919a6f034941c9848c767d771a49e9",
+      "name": "resolved_",
+      "label": "Resolved?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "efcd591f5af1481594ddf16d6140c72b",
+      "isHidden": false
+    },
+    "6c2259c9cd594b4e8c323c5da65db50e": {
+      "id": "6c2259c9cd594b4e8c323c5da65db50e",
+      "name": "anything_else_",
+      "label": "Anything Else?",
+      "varType": "boolean",
+      "secure": false,
+      "category": "vaInputs",
+      "nodeId": "db028d64dab74fa2a7c86d45cc63452a",
+      "isHidden": false
+    }
+  }
+}</graph>
+        <key_phrases>Form Issues,form is not showing,vehicle request,cannot loan form,form is not responding</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <model_type>nlu_keyword</model_type>
+        <modify_confirmation_enabled>false</modify_confirmation_enabled>
+        <name>Form Issues</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles>x_1394653_lva.lva_user,x_1394653_lva.vehicle_servicing_user</roles>
+        <root_topic_id/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 22:24:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8bad516a832c12106d3e5e20ceaad3ed</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>Form Issues</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_cb_topic_8bad516a832c12106d3e5e20ceaad3ed</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-13 01:29:01</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+    </sys_cb_topic>
+    <sys_translated_text action="delete_multiple" query="documentkey=8bad516a832c12106d3e5e20ceaad3ed"/>
+</record_update>

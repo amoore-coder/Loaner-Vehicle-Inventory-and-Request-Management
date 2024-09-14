@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="DELETE">
+        <child display_value="FleetFlex Footer">e2b9a22583e812106d3e5e20ceaad34e</child>
+        <cloned>2024-09-10 01:22:40</cloned>
+        <last_validated>2024-09-10 01:22:40</last_validated>
+        <parent display_value="Stock Footer">fc4be21acb01020000f8d856634c9c40</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Stock Footer&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// populate the 'data' object]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-07-06 22:48:43&lt;/sys_created_on&gt;&lt;sys_id&gt;fc4be21acb01020000f8d856634c9c40&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Stock Footer&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;b6f0f1568df0021087de63ac7f1f00c9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fc4be21acb01020000f8d856634c9c40&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-24 19:15:19&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="footer bg-dark m-t-lg"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12 text-center"&gt;
+        &lt;span class="navbar-brand navbar-brand-logo"&gt;
+          &lt;a ng-if="options.logo" href="?"&gt;
+            &lt;img ng-src="{{options.logo}}" style="height:22px" /&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+
+        &lt;div class="text-muted"&gt;${Service Portal}&lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 01:22:40</sys_created_on>
+        <sys_id>26b9a22583e812106d3e5e20ceaad351</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e2b9a22583e812106d3e5e20ceaad34e</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_26b9a22583e812106d3e5e20ceaad351</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 01:22:40</sys_updated_on>
+    </sp_rel_widget_clone>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</application>
+        <file_path/>
+        <instance_id>c19ad598db5dc25002022a5913961930</instance_id>
+        <instance_name>dev250735</instance_name>
+        <name>sp_rel_widget_clone_26b9a22583e812106d3e5e20ceaad351</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone"><sp_rel_widget_clone action="INSERT_OR_UPDATE"><child display_value="FleetFlex Footer">e2b9a22583e812106d3e5e20ceaad34e</child><cloned>2024-09-10 01:22:40</cloned><last_validated>2024-09-10 01:22:40</last_validated><parent display_value="Stock Footer">fc4be21acb01020000f8d856634c9c40</parent><payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Stock Footer&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// populate the 'data' object]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-07-06 22:48:43&lt;/sys_created_on&gt;&lt;sys_id&gt;fc4be21acb01020000f8d856634c9c40&lt;/sys_id&gt;&lt;sys_mod_count&gt;11&lt;/sys_mod_count&gt;&lt;sys_name&gt;Stock Footer&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;b6f0f1568df0021087de63ac7f1f00c9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_fc4be21acb01020000f8d856634c9c40&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2017-08-24 19:15:19&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="footer bg-dark m-t-lg"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12 text-center"&gt;
+        &lt;span class="navbar-brand navbar-brand-logo"&gt;
+          &lt;a ng-if="options.logo" href="?"&gt;
+            &lt;img ng-src="{{options.logo}}" style="height:22px" /&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+
+        &lt;div class="text-muted"&gt;${Service Portal}&lt;/div&gt;
+
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload><sys_class_name>sp_rel_widget_clone</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2024-09-10 01:22:40</sys_created_on><sys_id>26b9a22583e812106d3e5e20ceaad351</sys_id><sys_mod_count>0</sys_mod_count><sys_name>e2b9a22583e812106d3e5e20ceaad34e</sys_name><sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package><sys_policy/><sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope><sys_update_name>sp_rel_widget_clone_26b9a22583e812106d3e5e20ceaad351</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2024-09-10 01:22:40</sys_updated_on></sp_rel_widget_clone></record_update>]]></payload>
+        <payload_hash>499553668</payload_hash>
+        <record_name>e2b9a22583e812106d3e5e20ceaad34e</record_name>
+        <reverted_from/>
+        <source>e764330b83b302106d3e5e20ceaad377</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 01:22:40</sys_created_on>
+        <sys_id>6eb9a22583e812106d3e5e20ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191d98691420000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 01:22:40</sys_updated_on>
+        <type>Widget Clone</type>
+        <update_guid>62b9a225a8e81210fefa8a24687e1b53</update_guid>
+        <update_guid_history>62b9a225a8e81210fefa8a24687e1b53:499553668</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">628e3f5e83a012106d3e5e20ceaad39b</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 15:28:39</sys_created_on>
+        <sys_db_object display_value="" name="sp_rel_widget_clone">sp_rel_widget_clone</sys_db_object>
+        <sys_id>5366ad8e39e74df883a63e9eab68c890</sys_id>
+        <sys_metadata>26b9a22583e812106d3e5e20ceaad351</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e2b9a22583e812106d3e5e20ceaad34e</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_scope_delete display_value="">1cba80f6e9a44d0085385d2c9ba14224</sys_scope_delete>
+        <sys_update_name>sp_rel_widget_clone_26b9a22583e812106d3e5e20ceaad351</sys_update_name>
+        <sys_update_version display_value="sp_rel_widget_clone_26b9a22583e812106d3e5e20ceaad351">6eb9a22583e812106d3e5e20ceaad353</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:28:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <roles/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">1ed299e5832412106d3e5e20ceaad3f3</sp_column>
+        <sp_widget display_value="knowledge Homepage Search">04ec050ddb53220099f93691f0b8f538</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 19:03:05</sys_created_on>
+        <sys_id>96d299e5832412106d3e5e20ceaad3f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Welcome to Knowledge</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_instance_96d299e5832412106d3e5e20ceaad3f6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 19:03:05</sys_updated_on>
+        <title>Welcome to Knowledge</title>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"placeholder": {
+		"value": "",
+		"displayValue": ""
+	},
+	"allow_empty_search": {
+		"value": "Use system property",
+		"displayValue": "Use system property"
+	},
+	"min_search_char": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance>
+    <sys_translated_text action="delete_multiple" query="documentkey=96d299e5832412106d3e5e20ceaad3f6"/>
+</record_update>

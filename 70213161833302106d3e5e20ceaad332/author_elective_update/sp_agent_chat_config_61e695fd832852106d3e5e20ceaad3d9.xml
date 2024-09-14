@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_agent_chat_config">
+    <sp_agent_chat_config action="DELETE">
+        <active>false</active>
+        <name>FleetFlex Agent Chat</name>
+        <order>100</order>
+        <portal>a9cb8dad83e012106d3e5e20ceaad392</portal>
+        <public>false</public>
+        <roles/>
+        <server_script><![CDATA[(function($sp) {
+	return {
+		fleetflex_rentals:
+		$sp.getValue('fleetflex_rentals')
+		};
+})($sp);]]></server_script>
+        <sys_class_name>sp_agent_chat_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 14:06:00</sys_created_on>
+        <sys_id>61e695fd832852106d3e5e20ceaad3d9</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>FleetFlex Agent Chat</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_agent_chat_config_61e695fd832852106d3e5e20ceaad3d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:23:06</sys_updated_on>
+    </sp_agent_chat_config>
+    <sys_translated_text action="DELETE" query="documentkey=61e695fd832852106d3e5e20ceaad3d9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</application>
+        <file_path/>
+        <instance_id>c19ad598db5dc25002022a5913961930</instance_id>
+        <instance_name>dev250735</instance_name>
+        <name>sp_agent_chat_config_61e695fd832852106d3e5e20ceaad3d9</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_agent_chat_config"&gt;&lt;sp_agent_chat_config action="INSERT_OR_UPDATE"&gt;&lt;active&gt;false&lt;/active&gt;&lt;name&gt;FleetFlex Agent Chat&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;portal&gt;a9cb8dad83e012106d3e5e20ceaad392&lt;/portal&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;server_script&gt;&lt;![CDATA[(function($sp) {
+	return {
+		fleetflex_rentals:
+		$sp.getValue('fleetflex_rentals')
+		};
+})($sp);]]&gt;&lt;/server_script&gt;&lt;sys_class_name&gt;sp_agent_chat_config&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-10 14:06:00&lt;/sys_created_on&gt;&lt;sys_id&gt;61e695fd832852106d3e5e20ceaad3d9&lt;/sys_id&gt;&lt;sys_mod_count&gt;6&lt;/sys_mod_count&gt;&lt;sys_name&gt;FleetFlex Agent Chat&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_agent_chat_config_61e695fd832852106d3e5e20ceaad3d9&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-12 15:23:06&lt;/sys_updated_on&gt;&lt;/sp_agent_chat_config&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=61e695fd832852106d3e5e20ceaad3d9"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-902020389</payload_hash>
+        <record_name>FleetFlex Agent Chat</record_name>
+        <reverted_from/>
+        <source>e764330b83b302106d3e5e20ceaad377</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 15:23:06</sys_created_on>
+        <sys_id>4d4d3bda83a012106d3e5e20ceaad323</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191e6d4b9330000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:23:06</sys_updated_on>
+        <type>Service Portal Agent Chat Configuration</type>
+        <update_guid>cd4d3bdaa4a012106435b10e4257b222</update_guid>
+        <update_guid_history>cd4d3bdaa4a012106435b10e4257b222:-902020389,6eddfa82e9a4d2108c07b8d0be32e778:-1142364446,f39df6067aa4d2109aac7b87b4fea484:1322582467,0fcc768237a4d210af629ec541a4ffea:904987039,5bfb724259a4d210ccd98a7fc20ca2eb:693360835,201b59b1c1685210b4b4985f3e68e6d4:-647216960,487819fdd9285210111ab4ffd7236fd7:208365868</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="FleetFlex Agent Chat">a45d7fda83a012106d3e5e20ceaad3de</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 15:23:20</sys_created_on>
+        <sys_db_object display_value="" name="sp_agent_chat_config">sp_agent_chat_config</sys_db_object>
+        <sys_id>3efa6e5db3ef463ea53e528d92688f29</sys_id>
+        <sys_metadata>61e695fd832852106d3e5e20ceaad3d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FleetFlex Agent Chat</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_scope_delete display_value="">1cba80f6e9a44d0085385d2c9ba14224</sys_scope_delete>
+        <sys_update_name>sp_agent_chat_config_61e695fd832852106d3e5e20ceaad3d9</sys_update_name>
+        <sys_update_version display_value="sp_agent_chat_config_61e695fd832852106d3e5e20ceaad3d9">4d4d3bda83a012106d3e5e20ceaad323</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:23:20</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

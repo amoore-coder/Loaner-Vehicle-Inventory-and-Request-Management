@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]></client_script>
+        <controller_as>c</controller_as>
+        <css>div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fleetflex_footer</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>FleetFlex Footer</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[// populate the 'data' object]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 01:22:40</sys_created_on>
+        <sys_id>e2b9a22583e812106d3e5e20ceaad34e</sys_id>
+        <sys_mod_count>46</sys_mod_count>
+        <sys_name>FleetFlex Footer</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_widget_e2b9a22583e812106d3e5e20ceaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 18:07:44</sys_updated_on>
+        <template><![CDATA[<div class="footer bg-dark m-t-lg">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center FleetFlexFooter">
+        <span class="navbar-brand navbar-brand-logo">
+          <a ng-if="options.logo" href="?">
+            <img ng-src="{{options.logo}}" style="height:10px" />
+          </a>
+        </span>
+
+        <div>
+          <p>${CONTACT US}</p> 
+          <p>${ABOUT US}</p>
+          <p>${FAQs}</p>
+        </div>
+      </div>
+      
+    </div>
+  </div></div>]]></template>
+    </sp_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</application>
+        <file_path/>
+        <instance_id>c19ad598db5dc25002022a5913961930</instance_id>
+        <instance_name>dev250735</instance_name>
+        <name>sp_widget_e2b9a22583e812106d3e5e20ceaad34e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {  /* widget controller */  var c = this;};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;true&lt;/has_preview&gt;&lt;id&gt;fleetflex_footer&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;FleetFlex Footer&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;true&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[// populate the 'data' object]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-10 01:22:40&lt;/sys_created_on&gt;&lt;sys_id&gt;e2b9a22583e812106d3e5e20ceaad34e&lt;/sys_id&gt;&lt;sys_mod_count&gt;46&lt;/sys_mod_count&gt;&lt;sys_name&gt;FleetFlex Footer&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_e2b9a22583e812106d3e5e20ceaad34e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-10 18:07:44&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="footer bg-dark m-t-lg"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-sm-12 text-center FleetFlexFooter"&gt;
+        &lt;span class="navbar-brand navbar-brand-logo"&gt;
+          &lt;a ng-if="options.logo" href="?"&gt;
+            &lt;img ng-src="{{options.logo}}" style="height:10px" /&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+
+        &lt;div&gt;
+          &lt;p&gt;${CONTACT US}&lt;/p&gt; 
+          &lt;p&gt;${ABOUT US}&lt;/p&gt;
+          &lt;p&gt;${FAQs}&lt;/p&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+    &lt;/div&gt;
+  &lt;/div&gt;&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>849218039</payload_hash>
+        <record_name>FleetFlex Footer</record_name>
+        <reverted_from/>
+        <source>e764330b83b302106d3e5e20ceaad377</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 18:07:45</sys_created_on>
+        <sys_id>15cf86f9836c52106d3e5e20ceaad3b0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191dd1ebd970000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 18:07:45</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>99cf86f95e6c5210cc925d2de2fa0faf</update_guid>
+        <update_guid_history>99cf86f95e6c5210cc925d2de2fa0faf:849218039,30bfc2f9086c52100a0bf6c6c73cb951:12423096,4a9f42f98e6c5210ed0f4b20e95b7bd4:512625654,558f02f9406c52103fd20d3a30109795:-1134084497,9d1fc6b9c46c52105093e01dbb5fbd0d:-649986543,55958329906c12108975159638d7068c:419436120,4b7507a56a6c12103f5bf4c0cfdd7329:-188176744,cd34c7a5176c1210ad8b270fa215685a:2146279842,35248ba1946c1210a3f12c9eeb76391b:-1140504570,8014cf65186c121011bb5be72799d714:2146279842,34d38f65176c121004932d8d10b4a78f:-1452789366,7cc34f65546c1210033f343199a9f226:1192293188,43830b659f6c12109d0f026b92eea06e:-1452789366,bd6287a1f46c1210186dc808cf6ba185:-1376817967,85318321056c1210b7da7f17f06b7bc5:-1098382149,8411cfedfb2c1210df1ecf4e3b71e0ce:-2036755621,8be043a1516c121001e4620adc31bed9:-1240981456,2cd0cf21d56c1210a1184860c66d15e8:-1709725937,52000f21866c121073eed74f3ac06018:-1098382149,d6ff7e21886c121098bc5ac660263ab0:-654827340,67dfb221d26c1210e95f80ddfeb141d0:-901104193,1ecfb2213f6c1210bc9d17d7f94f27c9:-1797049738,8d5f7eedac2c12103e71f4e982ebd4be:33322236,b53f7eedb42c12104c0102db96422ecd:623095636,5f1ffa2d382c12102ca47b9f5681f7fd:824358484,7eeeb26da62c12102a367745f7f1bb1b:-1990964916,d2ae726d102c1210a778c6101f64b51a:-1864878382,409c322d1a2c12102a1da53951ebb188:2025232129,011c36e9802c121076182ac280c72ce4:794824713,7a7b7ea9b12c12105fb5393c3f8b7edd:-1373377129,0e4b7a69e82c12103654f7508bff7860:-814581240,46faba693f2c1210faee5e51f32a62ec:-1617019541,303a7a69512c121036ae65ac1173e151:-1864676465,b02abe61212c12107a9144fb031e8f79:-1422309687,bf263e251b2c12103abd4a54dfe85819:-675739974,4e42beed1ae81210117442e9835da659:1422910567,89327eed59e81210331c54df2387fb4d:1102899246,81123ead69e81210dff31a0e82cccabe:1422910567,9e51f2e94de8121051229cbb297796c3:1080989799,853132ade1e812100734e0cb37d4ac06:-683902753,9b1f62a95fe8121035b81191767fb880:1422910567,6ffd2aa9d4e81210d9ee8c07c8bd99e8:1061429872,0b9d62a9d5e81210684c8a6e21a47423:-945220880,ac5d2a658ee81210c6fda8484df35c32:-903353826,27cc626949e812107d763d40b333241b:-483991113,47acae2932e812103c02c16971406522:1081480057,aab9a22555e812102996bc4306f3224f:-1052651213</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="FleetFlex Footer">2e8eb75e83a012106d3e5e20ceaad3e3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 15:28:40</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>11d75f68076b459882166a67080f8010</sys_id>
+        <sys_metadata>e2b9a22583e812106d3e5e20ceaad34e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FleetFlex Footer</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_scope_delete display_value="">1cba80f6e9a44d0085385d2c9ba14224</sys_scope_delete>
+        <sys_update_name>sp_widget_e2b9a22583e812106d3e5e20ceaad34e</sys_update_name>
+        <sys_update_version display_value="sp_widget_e2b9a22583e812106d3e5e20ceaad34e">15cf86f9836c52106d3e5e20ceaad3b0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:28:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

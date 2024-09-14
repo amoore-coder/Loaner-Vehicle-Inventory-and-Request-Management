@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_context_profile_topic">
+    <sys_cs_context_profile_topic action="INSERT_OR_UPDATE">
+        <context_profile display_value="FleetFlex Chat Experience">9781fca283e412106d3e5e20ceaad334</context_profile>
+        <sys_class_name>sys_cs_context_profile_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 19:20:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>c4a3fc6683e412106d3e5e20ceaad3e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>greeting</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_cs_context_profile_topic_c4a3fc6683e412106d3e5e20ceaad3e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 19:20:49</sys_updated_on>
+        <topic display_value="Greetings.">aa0e685053130010cf8cddeeff7b127d</topic>
+        <topic_type>greeting</topic_type>
+    </sys_cs_context_profile_topic>
+</record_update>

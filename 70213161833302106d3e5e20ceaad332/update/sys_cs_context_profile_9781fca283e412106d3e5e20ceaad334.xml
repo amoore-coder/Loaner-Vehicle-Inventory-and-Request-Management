@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="874a8e3e838092106d3e5e20ceaad3fd" table="sys_cs_context_profile">
+    <sys_cs_context_profile action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <assistant_applicability_type>none</assistant_applicability_type>
+        <condition table="v_interaction_context">u_liveagent_portal=FleetFlex Rentals<item endquery="false" field="u_liveagent_portal" goto="false" newquery="false" operator="=" or="false" value="FleetFlex Rentals"/>
+        </condition>
+        <condition_mode>simple</condition_mode>
+        <condition_script><![CDATA[(function executeCondition(/* glide record */ current) {  
+	// customize condition logic here, return true or false  
+	return false;
+})(current);]]></condition_script>
+        <description/>
+        <model_type>nlu_keyword</model_type>
+        <name>FleetFlex Chat Experience</name>
+        <order>100</order>
+        <sys_class_name>sys_cs_context_profile</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 19:16:24</sys_created_on>
+        <sys_domain>874a8e3e838092106d3e5e20ceaad3fd</sys_domain>
+        <sys_id>9781fca283e412106d3e5e20ceaad334</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FleetFlex Chat Experience</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_cs_context_profile_9781fca283e412106d3e5e20ceaad334</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 19:16:24</sys_updated_on>
+    </sys_cs_context_profile>
+</record_update>

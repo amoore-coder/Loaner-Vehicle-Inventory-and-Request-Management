@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter table="x_1394653_lva_loaner_vehicle_catalog">status=Available^EQ<item display_value="Available" endquery="false" field="status" goto="false" newquery="false" operator="=" or="false" value="Available"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <glyph/>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Available Vehicles</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page/>
+        <sp_rectangle_menu display_value="FleetFlex Main Menu">ce675d2d832412106d3e5e20ceaad3cb</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 20:35:35</sys_created_on>
+        <sys_id>7b9729a183a412106d3e5e20ceaad35c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Available Vehicles</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_7b9729a183a412106d3e5e20ceaad35c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 20:35:35</sys_updated_on>
+        <table>x_1394653_lva_loaner_vehicle_catalog</table>
+        <type>filtered</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+    <sys_translated_text action="delete_multiple" query="documentkey=7b9729a183a412106d3e5e20ceaad35c"/>
+</record_update>

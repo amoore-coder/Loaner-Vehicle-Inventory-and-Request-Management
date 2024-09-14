@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_analytics_bucket">
+    <sys_analytics_bucket action="INSERT_OR_UPDATE">
+        <analytics_channel display_value="web">6496ef61c7001010393d265c95c260b9</analytics_channel>
+        <application_name>FleetFlex Rentals</application_name>
+        <bucket_document_id>a9cb8dad83e012106d3e5e20ceaad392</bucket_document_id>
+        <bucket_metadata/>
+        <bucket_table_name>sp_portal</bucket_table_name>
+        <bucket_type>service_portal</bucket_type>
+        <enable_unauthenticated_user_tracking>false</enable_unauthenticated_user_tracking>
+        <enabled>true</enabled>
+        <internal_name_for_index>x_1394653_lva.sp_portal.a9cb8dad83e012106d3e5e20ceaad392</internal_name_for_index>
+        <sys_class_name>sys_analytics_bucket</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 18:37:57</sys_created_on>
+        <sys_id>0a1dc521832412106d3e5e20ceaad3fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FleetFlex Rentals</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_analytics_bucket_0a1dc521832412106d3e5e20ceaad3fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 18:37:57</sys_updated_on>
+    </sys_analytics_bucket>
+</record_update>

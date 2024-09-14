@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_header_footer">
+    <sp_header_footer action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.legalFooter {
+  padding-bottom : 20px; 
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id/>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Copy of LegalFooter</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+	var id = $sp.getParameter('id');
+	data.footer = gs.nil(id) || id === 'details';
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <static>false</static>
+        <sys_class_name>sp_header_footer</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 19:31:15</sys_created_on>
+        <sys_id>ba499ded832412106d3e5e20ceaad36c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Copy of LegalFooter</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_header_footer_ba499ded832412106d3e5e20ceaad36c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 01:13:41</sys_updated_on>
+        <template><![CDATA[<div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-left legalFooter" ng-if="data.footer">
+        ${Contact Us}
+      </div>
+      <div class="col-xs-12 text-center legalFooter" ng-if="data.footer">
+        ${ServiceNow Confidential. © ServiceNow, Inc. All rights reserved.}
+      </div>
+    </div>
+  </div>]]></template>
+    </sp_header_footer>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</application>
+        <file_path/>
+        <instance_id>c19ad598db5dc25002022a5913961930</instance_id>
+        <instance_name>dev250735</instance_name>
+        <name>sp_header_footer_ba499ded832412106d3e5e20ceaad36c</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_header_footer"&gt;&lt;sp_header_footer action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[function() {
+  /* widget controller */
+  var c = this;
+}]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css&gt;.legalFooter {
+  padding-bottom : 20px; 
+}&lt;/css&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Copy of LegalFooter&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {
+
+	var id = $sp.getParameter('id');
+	data.footer = gs.nil(id) || id === 'details';
+
+})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;static&gt;false&lt;/static&gt;&lt;sys_class_name&gt;sp_header_footer&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-09-09 19:31:15&lt;/sys_created_on&gt;&lt;sys_id&gt;ba499ded832412106d3e5e20ceaad36c&lt;/sys_id&gt;&lt;sys_mod_count&gt;2&lt;/sys_mod_count&gt;&lt;sys_name&gt;Copy of LegalFooter&lt;/sys_name&gt;&lt;sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Loaner Vehicle Request and Inventory"&gt;70213161833302106d3e5e20ceaad332&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_header_footer_ba499ded832412106d3e5e20ceaad36c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-09-10 01:13:41&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="container"&gt;
+    &lt;div class="row"&gt;
+      &lt;div class="col-xs-12 text-left legalFooter" ng-if="data.footer"&gt;
+        ${Contact Us}
+      &lt;/div&gt;
+      &lt;div class="col-xs-12 text-center legalFooter" ng-if="data.footer"&gt;
+        ${ServiceNow Confidential. © ServiceNow, Inc. All rights reserved.}
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_header_footer&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1884870099</payload_hash>
+        <record_name>Copy of LegalFooter</record_name>
+        <reverted_from/>
+        <source>e764330b83b302106d3e5e20ceaad377</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 01:13:41</sys_created_on>
+        <sys_id>03a7626183e812106d3e5e20ceaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>191d97e58ce0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 01:13:41</sys_updated_on>
+        <type>Header | Footer</type>
+        <update_guid>87a762616be81210e40e36d1e1a00f6f</update_guid>
+        <update_guid_history>87a762616be81210e40e36d1e1a00f6f:1884870099,c6e6e66137e81210fb38cfed78137f28:1195774239,cf499dedc3241210dc103e092993a66d:-1896750975</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Copy of LegalFooter">e65fa93183e852106d3e5e20ceaad368</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 15:46:07</sys_created_on>
+        <sys_db_object display_value="" name="sp_header_footer">sp_header_footer</sys_db_object>
+        <sys_id>0641e71c91e547d0819213ce8dd73640</sys_id>
+        <sys_metadata>ba499ded832412106d3e5e20ceaad36c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Copy of LegalFooter</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_scope_delete display_value="">1cba80f6e9a44d0085385d2c9ba14224</sys_scope_delete>
+        <sys_update_name>sp_header_footer_ba499ded832412106d3e5e20ceaad36c</sys_update_name>
+        <sys_update_version display_value="sp_header_footer_ba499ded832412106d3e5e20ceaad36c">03a7626183e812106d3e5e20ceaad370</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-10 15:46:07</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

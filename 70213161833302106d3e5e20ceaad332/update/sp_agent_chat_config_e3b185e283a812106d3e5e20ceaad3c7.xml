@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_agent_chat_config">
+    <sp_agent_chat_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>FleetFlex Virtual Agent</name>
+        <order>100</order>
+        <portal>a9cb8dad83e012106d3e5e20ceaad392</portal>
+        <public>false</public>
+        <roles/>
+        <server_script><![CDATA[(function($sp) {
+	return {
+		branding_key: 'loaner_vehicle'
+		};
+})($sp);]]></server_script>
+        <sys_class_name>sp_agent_chat_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 20:27:25</sys_created_on>
+        <sys_id>e3b185e283a812106d3e5e20ceaad3c7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FleetFlex Virtual Agent</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_agent_chat_config_e3b185e283a812106d3e5e20ceaad3c7</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 20:38:07</sys_updated_on>
+    </sp_agent_chat_config>
+    <sys_translated_text action="delete_multiple" query="documentkey=e3b185e283a812106d3e5e20ceaad3c7"/>
+</record_update>

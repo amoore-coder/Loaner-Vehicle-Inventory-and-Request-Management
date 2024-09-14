@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_theme">
+    <sp_theme action="INSERT_OR_UPDATE">
+        <css_variables>$brand-primary:			#0574DE !default;
+$brand-success:         #0a5d0c !default;
+$brand-info:            #0F7D8B !default;
+$brand-warning:         #9E6817 !default;
+$brand-danger:          #B12F2C !default;
+$state-danger-text:     #64201a;
+
+$accessible-placeholder-gray:       #565656;
+
+$primary:				$brand-primary !default;
+
+$sp-logo-margin-x: 		15px !default;
+$sp-tagline-color:		$text-color !default;
+$navbar-inverse-bg: 	#22273C !default;
+$navbar-inverse-link-color: #e9320c;
+$navbar-inverse-link-hover-color: #000000;
+$navbar-inverse-link-hover-bg: $brand-primary !default;
+$navbar-inverse-link-active-bg: $brand-primary !default;
+$body-bg: 				#fff !default;
+$dropdown-link-disabled-color: #ccc;
+$sp-disabled-breadcrumb: #1a1a1a;
+
+$no-issue-border-color: $brand-success;
+$planned-maintenance-border-color: $brand-info;
+$service-degredation-border-color: $brand-warning;
+$service-outage-border-color: $brand-danger;
+
+//** Global textual link color.
+$link-color:            #045AAE !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//** Panel styles
+$panel-primary-heading-bg: #e9320c;
+$panel-primary-border: #e9320c;
+$panel-primary-text: #2E2E2E !default;
+
+$text-muted:			#646567 !default;
+$sp-agent-chat-bg: #ff0000;
+
+.label {
+	font-weight: normal !important;
+    font-size: 12px !important;
+}
+
+/* alert overrides */
+.alert-success {
+    color: $brand-success !important;
+}
+.alert-info {
+    color: $brand-info !important;
+}
+.alert-warning {
+    color: $brand-warning !important;
+}
+.alert-danger {
+    color: $brand-danger !important;
+}
+
+[accessibility] {
+	a {  
+      &amp;:hover {
+          text-decoration: underline !important;
+      }
+      &amp;:focus {  		
+          text-decoration: underline !important;
+      }
+	}
+    
+    .sp-announcement-root {
+    	a {
+        	text-decoration: underline !important;
+          }
+     }
+           
+    [uib-rating] {
+    	.glyphicon-star {
+        	color: black !important;
+        }
+    }
+    
+    input::-webkit-input-placeholder {
+		color: $accessible-placeholder-gray !important;
+	}
+	input::-moz-placeholder {
+    	color: $accessible-placeholder-gray !important;
+	}
+	input:-ms-input-placeholder {
+		color: $accessible-placeholder-gray !important;
+	}
+}
+
+button:focus {
+     outline:none; 
+     border:1px solid #4D90FE;
+     -webkit-box-shadow: 0px 0px 5px  #4D90FE;
+     box-shadow: 0px 0px 5px  #4D90FE;
+}
+
+[tabindex]:focus {
+	outline:none; 
+	border:1px solid #4D90FE;
+	-webkit-box-shadow: 0px 0px 5px  #4D90FE;
+	box-shadow: 0px 0px 5px  #4D90FE;
+}
+
+
+.navbar-nav {
+	.open {
+    	a {
+        	.label {
+            	background-color: #F5F5F5;
+                color: $brand-primary;
+            }
+        }
+    }
+    
+    li {
+    	a:hover,
+	a:focus {
+          .label {
+          	background-color: #F5F5F5;
+            color: $brand-primary;
+          }
+        }
+    }
+}
+
+.panel-primary {
+	.label {
+    	background-color: #F5F5F5;
+        border: 1px solid #e9320c;
+        color: #2E2E2E;
+    }
+}
+
+.breadcrumbs-container {
+    background-color: #f0f3f4 !important;
+}
+
+.timeline-badge {
+	&amp;.success {
+		background-color: $brand-success !important;
+    }
+	.avatar-large {
+		background-color: $accessible-placeholder-gray !important;
+    }
+}
+
+.select2-results {
+	.select2-highlighted {
+    	background: $brand-primary !important;
+    }
+}
+
+.CodeMirror-linenumber {
+	color: #4c4c4c !important;
+}
+
+.help-block {
+	color: #545454 !important;
+}
+
+.selected {
+	background-color: #707070;
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu &gt; li &gt; a {
+  	.text-muted {
+		color: $navbar-inverse-link-color !important;    
+    }
+  }
+}
+
+//** Panel footer is a light gray background, so text color should be dark.
+.panel-footer {
+	color: #515151 !important;
+}</css_variables>
+        <footer display_value="Copy of Sample Footer">014eb31e83a012106d3e5e20ceaad304</footer>
+        <footer_fixed>true</footer_fixed>
+        <header display_value="Stock Header">bf5ec2f2cb10120000f8d856634c9c0c</header>
+        <name>FleetFlex Theme</name>
+        <navbar_fixed>true</navbar_fixed>
+        <sys_class_name>sp_theme</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-10 00:27:53</sys_created_on>
+        <sys_id>ffbc9e2583a812106d3e5e20ceaad3c1</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>FleetFlex Theme</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_theme_ffbc9e2583a812106d3e5e20ceaad3c1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:37:23</sys_updated_on>
+        <turn_off_scss_compilation>false</turn_off_scss_compilation>
+    </sp_theme>
+</record_update>

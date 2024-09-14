@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id/>
+        <report_id display_value="Types of Available Vehicles">e4a66e428324d2106d3e5e20ceaad348</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-11 14:26:07</sys_created_on>
+        <sys_id>6ca66e428324d2106d3e5e20ceaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>e4a66e428324d2106d3e5e20ceaad348</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_report_users_groups_6ca66e428324d2106d3e5e20ceaad348</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-11 14:26:07</sys_updated_on>
+        <user_id display_value="Arlesha Moore">6816f79cc0a8016401c5a33be04be441</user_id>
+    </sys_report_users_groups>
+</record_update>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_portal_catalog">
+    <m2m_sp_portal_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <order>100</order>
+        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sp_portal display_value="FleetFlex Rentals">a9cb8dad83e012106d3e5e20ceaad392</sp_portal>
+        <sys_class_name>m2m_sp_portal_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 21:16:27</sys_created_on>
+        <sys_id>886135ed83a412106d3e5e20ceaad361</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Service Catalog.FleetFlex Rentals</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>m2m_sp_portal_catalog_886135ed83a412106d3e5e20ceaad361</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 21:16:27</sys_updated_on>
+    </m2m_sp_portal_catalog>
+</record_update>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic_language">
+    <sys_cs_topic_language action="INSERT_OR_UPDATE">
+        <cs_topic_id display_value="Form Issues">bf0169ee832c12106d3e5e20ceaad34e</cs_topic_id>
+        <language_code>en</language_code>
+        <nlu_entities>[{"variable_name":"live_agent","nlu_entity":"","nlu_entity_label":""},{"variable_name":"resolved_","nlu_entity":"","nlu_entity_label":""},{"variable_name":"anything_else_","nlu_entity":"","nlu_entity_label":""}]</nlu_entities>
+        <nlu_intent>CreateProblem</nlu_intent>
+        <nlu_intent_label>CreateProblem</nlu_intent_label>
+        <nlu_model>sn_itsm_nlu_ITSM_NLU_for_VA</nlu_model>
+        <nlu_model_label>ITSM NLU for Virtual Agent</nlu_model_label>
+        <nlu_provider>64c023c17300330021a044764df6a70e</nlu_provider>
+        <sys_class_name>sys_cs_topic_language</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-13 00:09:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>cdc5bdaa83ac12106d3e5e20ceaad33c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_cs_topic_language_cdc5bdaa83ac12106d3e5e20ceaad33c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-13 00:50:30</sys_updated_on>
+    </sys_cs_topic_language>
+</record_update>

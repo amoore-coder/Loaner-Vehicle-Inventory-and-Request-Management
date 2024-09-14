@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_rel_widget_clone">
+    <sp_rel_widget_clone action="INSERT_OR_UPDATE">
+        <child display_value="FleetFlex Carousel">51d6e56183a412106d3e5e20ceaad3e3</child>
+        <cloned>2024-09-09 20:30:23</cloned>
+        <last_validated>2024-09-09 20:30:23</last_validated>
+        <parent display_value="Carousel">cf1a5153cb21020000f8d856634c9c3c</parent>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;sp_widget&gt;&lt;category&gt;standard&lt;/category&gt;&lt;client_script/&gt;&lt;controller_as/&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance_carousel&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list&gt;interval&lt;/field_list&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id/&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link/&gt;&lt;name&gt;Carousel&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[data.slides = $sp.getRelatedList('sp_carousel_slide','carousel');]]&gt;&lt;/script&gt;&lt;servicenow&gt;true&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2015-08-02 18:57:31&lt;/sys_created_on&gt;&lt;sys_id&gt;cf1a5153cb21020000f8d856634c9c3c&lt;/sys_id&gt;&lt;sys_mod_count&gt;68&lt;/sys_mod_count&gt;&lt;sys_name&gt;Carousel&lt;/sys_name&gt;&lt;sys_package display_value="Service Portal - Core" source="com.glide.service-portal"&gt;b6f0f1568df0021087de63ac7f1f00c9&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Global"&gt;global&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_cf1a5153cb21020000f8d856634c9c3c&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2020-02-03 06:27:08&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div class="pull-in"&gt;
+  &lt;uib-carousel interval="options.interval"&gt;
+    &lt;uib-slide ng-repeat="slide in ::data.slides" active="slide.active"&gt;
+      &lt;div class="container"&gt;
+        &lt;a href="{{::slide.url}}" title="${Open carousel item}: {{::slide.name}}"&gt;
+          &lt;img ng-src="{{::slide.background}}" style="margin:auto; width:100%;" role="presentation"&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/uib-slide&gt;
+  &lt;/uib-carousel&gt;
+&lt;/div&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;</payload>
+        <sys_class_name>sp_rel_widget_clone</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 20:30:23</sys_created_on>
+        <sys_id>11d6e56183a412106d3e5e20ceaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>51d6e56183a412106d3e5e20ceaad3e3</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_rel_widget_clone_11d6e56183a412106d3e5e20ceaad3e6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 20:30:23</sys_updated_on>
+    </sp_rel_widget_clone>
+</record_update>

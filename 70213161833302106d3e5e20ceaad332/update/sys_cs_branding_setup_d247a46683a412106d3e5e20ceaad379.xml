@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_branding_setup">
+    <sys_cs_branding_setup action="INSERT_OR_UPDATE">
+        <agent_bubble_bg_color>#E9EDF1</agent_bubble_bg_color>
+        <agent_bubble_font_color>#343D47</agent_bubble_font_color>
+        <bg_color>#ffffff</bg_color>
+        <body_font_name/>
+        <body_font_src/>
+        <bot_bubble_bg_color>#E9EDF1</bot_bubble_bg_color>
+        <bot_bubble_font_color>#343D47</bot_bubble_font_color>
+        <branding_key>loaner_vehicle</branding_key>
+        <branding_name>Loaner Vehicle</branding_name>
+        <bubble_bg_color>#0574DE</bubble_bg_color>
+        <bubble_font_color>#ffffff</bubble_font_color>
+        <button_bg_action_color>#406770</button_bg_action_color>
+        <button_bg_color>#ffffff</button_bg_color>
+        <button_hover_bg_header_color>#0000004C</button_hover_bg_header_color>
+        <button_hover_bg_modal_color>#00000033</button_hover_bg_modal_color>
+        <button_primary_bg_active_color/>
+        <button_primary_bg_color/>
+        <button_primary_bg_hover_color/>
+        <button_selection_text_color>#406770</button_selection_text_color>
+        <category_bg_color>#efeff4</category_bg_color>
+        <category_font_color>#6d6d72</category_font_color>
+        <chat_body_font_size>1</chat_body_font_size>
+        <chat_header_font_size>1</chat_header_font_size>
+        <chat_icon_bg_color>#9898E4</chat_icon_bg_color>
+        <choicepicker_input_bg_color>#FFFFFF</choicepicker_input_bg_color>
+        <choicepicker_input_icon_color>#B8B8B8</choicepicker_input_icon_color>
+        <close_icon_color>#676767</close_icon_color>
+        <disabled_input_bg_color>#EEEEEE</disabled_input_bg_color>
+        <disabled_link_color>#666666</disabled_link_color>
+        <error_color>#C83D36</error_color>
+        <header_bg_color>#0574DE</header_bg_color>
+        <header_font_color>#ffffff</header_font_color>
+        <header_font_name/>
+        <header_font_src/>
+        <header_label>FleetFlex Support</header_label>
+        <highlight_color>#FFDA72</highlight_color>
+        <highlight_text_color>#000000</highlight_text_color>
+        <hover_bg_multichoice_color>#E6E6E6</hover_bg_multichoice_color>
+        <input_bg_color>#fafafa</input_bg_color>
+        <input_field_icon_color>#767676</input_field_icon_color>
+        <input_field_text_color>#000000</input_field_text_color>
+        <input_placeholder_text_color>#666666</input_placeholder_text_color>
+        <link_color>#0574DE</link_color>
+        <link_color_nonneutral_bg>#FFFFFF</link_color_nonneutral_bg>
+        <load_animation_color>#293e40</load_animation_color>
+        <menu_icon_color>#ffffff</menu_icon_color>
+        <menu_title>Contact Support</menu_title>
+        <modal_body_bg_color>#FFFFFF</modal_body_bg_color>
+        <modal_header_bg_color>#f6f6f6</modal_header_bg_color>
+        <msg_delay>500</msg_delay>
+        <non_clickable_title_color>#161B1C</non_clickable_title_color>
+        <notification_bg>#efeff4</notification_bg>
+        <notification_txt>#0F78C4</notification_txt>
+        <overlay_area_color>#00000066</overlay_area_color>
+        <placeholder_text/>
+        <primary_button_action_text_color>#FFFFFF</primary_button_action_text_color>
+        <search_icon_color>#406770</search_icon_color>
+        <secondary_text_color>#767676</secondary_text_color>
+        <seperator_color>#B8B8B8</seperator_color>
+        <shadow_color>#383838</shadow_color>
+        <sys_class_name>sys_cs_branding_setup</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 18:56:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>d247a46683a412106d3e5e20ceaad379</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Loaner Vehicle</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_cs_branding_setup_d247a46683a412106d3e5e20ceaad379</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 19:03:39</sys_updated_on>
+        <system_message_color>#666666</system_message_color>
+        <timestamp_color>#767676</timestamp_color>
+        <tooltip_bg_color>#000000</tooltip_bg_color>
+        <tooltip_text_color>#FFFFFF</tooltip_text_color>
+        <type_presence_delay>1000</type_presence_delay>
+        <va_logo>86ed6c6e83a412106d3e5e20ceaad3b9</va_logo>
+        <va_profile display_value="Virtual Agent">0ca39ea2872303002ae97e2526cb0b70</va_profile>
+    </sys_cs_branding_setup>
+</record_update>

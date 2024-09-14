@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_message">
+    <sys_ui_message action="INSERT_OR_UPDATE">
+        <application>Virtual Agent</application>
+        <code/>
+        <commented_message/>
+        <key>please try clearing your cookies and cache and resetting your browser.</key>
+        <language>en</language>
+        <message>Please try clearing your cookies and cache and resetting your browser.</message>
+        <sys_class_name>sys_ui_message</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 23:16:17</sys_created_on>
+        <sys_id>e49921ea836c12106d3e5e20ceaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>please try clearing your cookies and cache and resetting your browser.</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sys_ui_message_e49921ea836c12106d3e5e20ceaad39d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 23:16:17</sys_updated_on>
+    </sys_ui_message>
+</record_update>

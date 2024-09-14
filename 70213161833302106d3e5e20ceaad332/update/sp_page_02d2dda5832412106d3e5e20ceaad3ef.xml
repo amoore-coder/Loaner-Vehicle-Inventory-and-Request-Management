@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_page">
+    <sp_page action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <css>section.page{
+  padding-top: 0;
+}main.body {
+  padding-top: 0;
+}
+.kb-home-explorer-continer{
+ background-color:#ffffff;
+  margin-bottom:20px;
+}
+.banner-container {
+    height: 230px;
+  	width: 100%;
+}
+.v-h-center {
+    display: table-cell;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+.search-container{
+  padding-top: 3.7rem;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 992px) {
+  .banner-container {
+    height: 85px;
+  }
+  .search-container{
+    padding-top: 0.1rem;
+  }
+}</css>
+        <draft>false</draft>
+        <dynamic_title_structure/>
+        <human_readable_url_structure/>
+        <id>fleetflex_kb_home</id>
+        <internal>false</internal>
+        <omit_watcher>false</omit_watcher>
+        <public>false</public>
+        <roles>snc_external,snc_internal</roles>
+        <seo_script/>
+        <short_description/>
+        <sys_class_name>sp_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-09 19:03:04</sys_created_on>
+        <sys_id>02d2dda5832412106d3e5e20ceaad3ef</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>fleetflex_kb_home</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_page_02d2dda5832412106d3e5e20ceaad3ef</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-09 19:06:30</sys_updated_on>
+        <title>FleetFlex KB Home</title>
+        <use_seo_script>false</use_seo_script>
+    </sp_page>
+    <sys_translated_text action="delete_multiple" query="documentkey=02d2dda5832412106d3e5e20ceaad3ef"/>
+</record_update>

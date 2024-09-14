@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($log, $scope, $element, $document, spModal, $q, $timeout, $window) {
+	'use strict';
+	
+  /* widget controller */
+  var $ctrl = this;
+	var $spContainer = $document.find('.sp-page-root');
+	var $widgetParent = $element.parent();
+	var START_SUPPORT_CONVERSATION = "${Start Support Conversation}";
+	var CLOSE_SUPPORT_CONVERSATION = "${Close Support Conversation}";
+	
+	$ctrl.isWindowVisible = false;
+	$ctrl.hasUnreadMessages = false;
+	$ctrl.firstPress = false;
+	$ctrl.vaSource = '';
+	$ctrl.helpButtonAriaLabel = START_SUPPORT_CONVERSATION;
+	
+	
+	$ctrl.toggleWindow = function() {
+		if ($ctrl.isWindowVisible) {
+			$ctrl.isWindowVisible = false;
+			$ctrl.helpButtonAriaLabel = START_SUPPORT_CONVERSATION;
+			$timeout(function() {
+				if (!$ctrl.isWindowVisible) {
+					$element.find('.conversation-container').css("display", "none");
+					$element.find('.sn-connect-floating').css("display", "none");
+					$element.find('.sn-connect-floating-wrapper').css("display", "none");
+					
+					// ios overlay hacky fix.
+					$document.find('.touch_scroll').css("-webkit-overflow-scrolling", "touch");
+				}
+			}, 300);
+		} else {
+			if (!$ctrl.firstPress) {
+				$ctrl.firstPress = true;
+				$ctrl.vaSource = '/$sn-va-web-client-app.do?sysparm_nostack=true&sysparm_stack=no';
+				if ($ctrl.options.va_url_params) {
+					$ctrl.vaSource = $ctrl.vaSource + '&' + $ctrl.options.va_url_params;
+				}
+			}
+			$ctrl.isWindowVisible = true;
+			$ctrl.hasUnreadMessages = false;
+			$ctrl.helpButtonAriaLabel = CLOSE_SUPPORT_CONVERSATION;
+			$element.find('.conversation-container').css("display", "block");
+			$element.find('.sn-connect-floating').css("display", "block");
+			$element.find('.sn-connect-floating-wrapper').css("display", "block");
+			
+			// ios overlay hacky fix.
+			$document.find('.touch_scroll').css("-webkit-overflow-scrolling", "auto");
+		}
+	};
+	
+		$window.addEventListener("message", function(e) {
+			if (e.data === 'sn-va-web-client-app-new-message' && $ctrl.isWindowVisible === false) {
+				$ctrl.hasUnreadMessages = true;
+			}
+			else if (e.data === 'sn-va-web-client-app-trigger-login') {
+				$window.location.reload(true);
+			}
+		});
+	
+	$element.find('.help-button').on("mouseup", function(e) {
+		e.target.blur();
+		e.stopPropagation();
+	});
+	
+	$element.find('.help-icon').on("mouseup", function(e) {
+		e.target.blur();
+		e.stopPropagation();
+	});
+	
+	$ctrl.openWindow = function() {
+		$ctrl.isWindowVisible = true;		
+		// delay before clearing unread message indicator
+		// in-case user opens and closes quickly
+		$timeout(function() {
+			if ($ctrl.isWindowVisible) {
+				$ctrl.hasUnreadMessages = false;							
+			}
+		}, 500);
+	};
+	
+	var _closeWindow = function() {
+		
+		$ctrl.isWindowVisible = false;
+		$ctrl.hasActiveConversation = false;
+	};
+}]]></client_script>
+        <controller_as>$ctrl</controller_as>
+        <css>$color-darker: #485563;
+$color-white: #ffffff;
+
+$window-width: 375px;
+$window-height: 600px;
+$button-height: 60px;
+$bottom-margin: 15px;
+
+$sn-chatbot-animation-speed: 300ms;
+
+// OVERRIDE TO DISPLAY RECORD CARDS
+.sn-card-component_records {
+  display: block !important;
+}
+
+.conversation-button-container {
+  position: fixed;
+  right: 30px;
+  bottom: 15px;
+  z-index: 20;
+
+  .conversation-region {
+    position: relative;
+    opacity: 0;
+    visibility: hidden;
+
+
+    &amp;.open {
+      transition: $sn-chatbot-animation-speed ease-in opacity;
+      opacity: 1;
+      visibility: visible;
+
+    }
+  }
+
+
+  .help-button {
+    position: relative;
+    width: 60px;
+    color: #fff;
+    float: right;
+    border: none;
+    height: $button-height;
+    border-radius: 60px;
+    box-shadow: 0px 2px 11px #ababab;
+    -moz-box-shadow: 0px 2px 11px #ababab;
+    -o-box-shadow: 0px 2px 11px #ababab;
+    padding: 0;
+    background-color: #8D8DE0;
+
+    &amp;::before {
+      content: "";
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    
+    &amp;:hover::before {
+    	background-color: rgba(0,0,0,0.2);
+    }
+
+    &amp;:focus {
+      outline: thin dotted;
+      outline-color: gray;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: 2px;
+    }
+
+    &amp;.state-unread {
+      &amp; &gt; span:after {
+        content: ' ';
+        position: absolute;
+        top: -17px;
+        right: -14px;
+        width: 16px;
+        height: 16px;
+        background-color: #ed6e5c;
+        border-radius: 25px;
+      }
+    }
+    
+    .help-icon {
+      pointer-events: none;
+      position: relative;
+    }
+    
+    .sn-va-widget-icon {
+    	background-image: url('/images/sn-va-sp-widget/sn-va-sp-widget-icon.svg');
+      height: 32px;
+      top: 1px;
+      left: 12px;
+      width: 36px;
+      display: block
+    }
+
+    .icon-close {
+      font-size: 20px;
+
+    }
+
+  }
+}
+
+// window sizing
+.sn-connect-floating {
+  position: relative;
+  bottom: 15px;
+  right: 0;
+  display: none;
+
+  .sn-connect-floating-wrapper {
+    width: $window-width; 
+    transition: 
+    border-bottom: 1px solid #bdc0c4;
+    margin-right: 0;
+    right: 0;
+    box-shadow: 0px 2px 11px #ababab !important;
+    -moz-box-shadow: 0px 2px 11px #ababab !important;
+    -o-box-shadow: 0px 2px 11px #ababab !important;
+    transition: max-height 0s $sn-chatbot-animation-speed;
+    display: none;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .conversation-container {
+      height: 100%;
+      display: none;
+
+      .chat-frame {
+        max-height: $window-height;
+        height: calc(100vh - $button-height - ($bottom-margin * 3));
+        width: $window-width;
+        margin-bottom: -5px;
+        border: none;
+        overflow: hidden;
+        background-color: #fff;
+      }
+
+      // Immediate div is autogenerated from serviceportal
+      &amp; &gt; div {
+        height: 100%;
+      }
+    }
+  }
+}
+
+// Mobile SCSS
+@media (max-width: 425px) {  
+  .sn-connect-floating {
+    .sn-connect-floating-wrapper {
+      position: fixed;
+      max-height: 100%;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: calc($button-height + 20px);
+      top: 0;
+      border-radius: 0px !important;
+
+      .conversation-container {
+        position: absolute;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+        .chat-frame {
+          max-height: initial !important;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>fleetflex_virtual_agent</id>
+        <internal>false</internal>
+        <link><![CDATA[function(){}]]></link>
+        <name>FleetFlex Virtual Agent</name>
+        <option_schema>[{"hint":"The color of the floating button which opens the virtual agent service portal widget button.","name":"button_color","section":"Presentation","default_value":"#8D8DE0","label":"Floating Button Color","type":"string"},{"hint":"The URL parameters to pass to the VA client, for example: sysparm_live_agent_queue=abc123&amp;sysparm_conversation=xzy456","name":"va_url_params","section":"Behavior","label":"Virtual Agent Client URL Parameters","type":"string"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+	
+	var instanceGR = $sp.getInstanceRecord();
+	
+	options.va_url_params = options.va_url_params || "";
+	options.button_color = options.button_color || "red";
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-09-12 15:24:00</sys_created_on>
+        <sys_id>1e7dbfda83a012106d3e5e20ceaad37e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FleetFlex Virtual Agent</sys_name>
+        <sys_package display_value="Loaner Vehicle Request and Inventory" source="x_1394653_lva">70213161833302106d3e5e20ceaad332</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Vehicle Request and Inventory">70213161833302106d3e5e20ceaad332</sys_scope>
+        <sys_update_name>sp_widget_1e7dbfda83a012106d3e5e20ceaad37e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-09-12 15:24:00</sys_updated_on>
+        <template><![CDATA[<div class="conversation-button-container">
+	<div class="conversation-region fade" 
+       ng-class="{'open': $ctrl.isWindowVisible}">
+    <div class="sn-connect sn-connect-floating">
+      <div class="sn-connect-floating-wrapper loaded">
+        <div class="conversation-container">
+          <iframe title="${Chat Support}" class = "chat-frame" scrolling="no"  horizontalscrolling="no" verticalscrolling="no" frameborder="none" ng-src="{{$ctrl.vaSource}}">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button aria-label="{{$ctrl.helpButtonAriaLabel}}"
+          class="help-button"
+          ng-attr-tabindex="0"
+          ng-class="{'state-open': $ctrl.isWindowVisible, 'state-unread': $ctrl.hasUnreadMessages}" 
+          ng-click="$ctrl.toggleWindow()"
+          ng-style="{'background-color': $ctrl.options.button_color}"
+          ng-attr-tabindex="0">
+    <div class="hover-overlay"></div>
+    <span aria-hidden="true" ng-class="$ctrl.isWindowVisible ? 'help-icon icon-close icon-cross' : 'help-icon icon-open sn-va-widget-icon'"></span>
+  </button>  
+</div>]]></template>
+    </sp_widget>
+</record_update>
